@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="prime.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var no = 50;
+var speed = 1;
+var is_ns = (document.layers) ? 1 : 0;
+var is_ie = (document.all) ? 1 : 0;
+var s, x, y, sn, cs;
+var a, r, cx, cy;
+var i, doc_width = 800, doc_height = 600;
+if (is_ns) {
+         doc_width = self.innerWidth;
+         doc_height = self.innerHeight;
+}
+else
+if (is_ie) {
+        doc_width = document.body.clientWidth;
+        doc_height = document.body.clientHeight;
+}
+x = new Array();
+y = new Array();
+r = new Array();
+cx = new Array();
+cy = new Array();
+s = 8;
+for (i = 0; i < no; ++ i) {
+      initRain();
+      if (is_ns) {
+           if (i == 0) {
+               document.write("<layer name=\"dot"+ i +"\" left=\"1\" ");
+               document.write("top=\"1\" visibility=\"show\"><font color=\"blue\">");
+               document.write(",</font></layer>");
+            }
+            else {
+                document.write("<layer name=\"dot"+ i +"\" left=\"1\" ");
+                document.write("top=\"1\" visibility=\"show\"><font color=\"blue\">");
+                document.write(",</font></layer>");
+            }
+       }
+       else
+       if (is_ie) {
+             if (i == 0) {
+                   document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+                   document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+                   document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"blue\">");
+                   document.write(",</font></div>");
+              }
+              else {
+                   document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+                   document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+                   document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"blue\">");
+                   document.write(",</font></div>");
+              }
+         }
+}
+
+function initRain() {
+a = 6;
+r[i] = 1;
+sn = Math.sin(a);
+cs = Math.cos(a);
+cx[i] = Math.random() * doc_width + 1;
+cy[i] = Math.random() * doc_height + 1;
+x[i] = r[i] * sn + cx[i];
+y[i] = cy[i];
+}
+function makeRain() {
+r[i] = 1;
+cx[i] = Math.random() * doc_width + 1;
+cy[i] = 1;
+x[i] = r[i] * sn + cx[i];
+y[i] = r[i] * cs + cy[i];
+}
+function updateRain() {
+r[i] += s;
+x[i] = r[i] * sn + cx[i];
+y[i] = r[i] * cs + cy[i];
+}
+function raindropNS() {
+for (i = 0; i < no; ++ i) {
+updateRain();
+if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
+makeRain();
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+}
+document.layers["dot"+i].top = y[i];
+document.layers["dot"+i].left = x[i];
+}
+setTimeout("raindropNS()", speed);
+}
+function raindropIE() {
+for (i = 0; i < no; ++ i) {
+updateRain();
+if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
+makeRain();
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+document.all["dot"+i].style.pixelTop = y[i];
+document.all["dot"+i].style.pixelLeft = x[i];
+}
+setTimeout("raindropIE()", speed);
+}
+if (is_ns) {
+raindropNS();
+}
+else
+if (is_ie) {
+raindropIE();
+}
+// End -->
+</script>
+
+
+  <!--Menu-->
+  <header id="topnav">
+  <div class="inner">
+    <div class="logo"><a href="#">logo</a></div>
+    <nav role='navigation'>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>  
+  </div>
+</header>
+<section>
+  <!--Slider-->
+  <div class="slider">
+	  <div class="arrows">
+	    <a class="previous" href="#">&#xf053;</a>
+	    <a class="next" href="#">&#xf054;</a>
+	  </div>
+	  <div class="slides">
+			<div class="slide active blue" data-icon="&#xf0ac;">
+				<h2>Timezones</h2>
+				<p>Clocks+ helps you break the barriers of space and time to get information for any city you like. You can search for and organise your favorite cities so that you can easily find out the correct local time.</p>
+				<a target="_blank" href="#">Check me out</a>
+			</div>
+			<div class="slide white" data-icon="&#xf0f3;">
+				<h2>Alarms</h2>
+				<p>Nobody wants to miss out on important events, but sometimes, it’s hard to find the time in another city. Clocks+ lets you set alarms for your favorite cities in a simple and intuitive way.</p>
+				<a target="_blank" href="#">Start the Clock</a>
+			</div>
+			<div class="slide red" data-icon="&#xf013;">
+				<h2>Widgets/Today Extension</h2>
+				<p>Clocks+ wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing, Did we mention that they look awesome, too?</p>
+				<a target="_blank" href="#">Download on AppStore</a>
+			</div>
+		</div>
+		<div class="bullets">
+		</div>
+	</div>
+	<h1>Job <span>and</span> Job</h1>
+
+<div class="great-houses">
+  <article class="house is--targaryen">
+    <h2 class="house__name"><span>Targaryen</span></h2>
+    <p class="house__motto"><span>Fire</span> <span class="line">and</span> <span class="line">blood</span></p>
+  </article>
+  
+  <article class="house is--baratheon">
+    <h2 class="house__name"><span>Baratheon</span></h2>
+    <p class="house__motto"><span class="line"><span>Ours</span> <span>is</span></span> <span>the</span> <span>fury</span></p>
+  </article>
+  
+  <article class="house is--tully">
+    <h2 class="house__name"><span>Tully</span></h2>
+    <p class="house__motto"><span class="line">Family</span> <span class="line">duty</span> <span>honor</span></p>
+  </article>
+  
+  <article class="house is--lannister">
+    <h2 class="house__name"><span>Lannister</span></h2>
+    <p class="house__motto"><span class="line">Hear</span> <span>me</span> <span>roar</span></p>
+  </article>
+  
+  <article class="house is--tyrell">
+    <h2 class="house__name"><span>Tyrell</span></h2>
+    <p class="house__motto"><span class="line">Growing</span> <span>strong</span></p>
+  </article>
+  
+  <article class="house is--stark">
+    <h2 class="house__name"><span>Stark</span></h2>
+    <p class="house__motto"><span class="line">Winter</span> <span>is</span> <span>coming</span></p>
+  </article>
+  
+  <article class="house is--arryn">
+    <h2 class="house__name"><span>Arryn</span></h2>
+    <p class="house__motto"><span class="line">As</span> <span class="line">high</span> <span class="line">as</span> <span class="line">honor</span></p>
+  </article>
+  
+  <article class="house is--martell">
+    <h2 class="house__name"><span>Martell</span></h2>
+    <p class="house__motto"><span class="line">Unbowed</span> <span class="line">Unbent</span> <span class="line">Unbroken</span></p>
+  </article>
+  
+  <article class="house is--greyjoy">
+    <h2 class="house__name"><span>Greyjoy</span></h2>
+    <p class="house__motto"><span>We</span> <span class="line">do not</span> <span>sow</span></p>
+  </article>
+
+</div>
+
+
+
+	<!--/Slider-->
+
+<section class="alternate" id="demosection2">
+  <div class="inner">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+ </section>
+ <center><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36165.37933454254!2d46.43762374628746!3d55.49166641027934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1460121295736" width="1300" height="580" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+ <center><p>Created by Black</p></center>
+  </body>
+</html>

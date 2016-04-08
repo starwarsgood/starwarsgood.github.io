@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACH,SAAS,EAAE,GAAG;;AACf,EAAE;EACD,SAAS,EAAE,IAAI",
+"sources": ["prime.sass"],
+"names": [],
+"file": "prime.css"
+}
